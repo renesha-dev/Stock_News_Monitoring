@@ -77,8 +77,8 @@ if abs(diff_percent) > 2:
     for article in formatted_articles:
         message = client.messages.create(
             body=article,
-            from_="+16813083548", # Bhattacharjeerenesha32@gamil.com
-            to="+91 96785 89928",
+            from_="add_your_twilio_number", 
+            to="receiver's_phone_number",
         )
         print(f"Message sent: {message.sid}")
 
@@ -92,3 +92,4 @@ if abs(diff_percent) > 2:
             email_msg["To"] = RECEIVER_EMAIL
             connect.send_message(email_msg)
             print(f"Email sent to: {RECEIVER_EMAIL} ")
+
